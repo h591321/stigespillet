@@ -16,11 +16,11 @@ public class StigeOgSlangeSpillet {
 		this.antSpillere=navnTab.length;
 		this.brett=new Brett();
 		
-		Spiller[] spillere = new Spiller[antSpillere];
+		this.spillere = new Spiller[antSpillere];
 		
 		for (int i = 0; i < antSpillere; i++) {
 			Spiller spiller = new Spiller(navnTab[i], brikkeTab[i]);
-			spillere[i] = spiller;
+			this.spillere[i] = spiller;
 		}
 	}
 
